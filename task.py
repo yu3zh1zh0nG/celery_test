@@ -2,7 +2,6 @@ import time
 from celery import Celery
 import random
 from flask_mail import Mail, Message
-import json
 from run import create_app
 
 celery = Celery('mycelery', broker='redis://localhost:6379/0',backend='redis://localhost:6379/0')

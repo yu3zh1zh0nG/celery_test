@@ -1,13 +1,4 @@
-import json
-import os
-import random
-import time
-from flask import Flask, request, render_template, session, flash, redirect, \
-    url_for, jsonify
-from flask_mail import Mail, Message
-from task import *
-from celery import Celery
-
+from flask import Flask
 
 def create_app():
     app = Flask(__name__)
